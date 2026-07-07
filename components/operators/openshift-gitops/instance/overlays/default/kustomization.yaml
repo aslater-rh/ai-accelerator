@@ -6,10 +6,10 @@ namespace: openshift-gitops
 resources:
   - ../../base
 
-# components:
+components:
 #   - ../../components/annotation-resource-tracking
 #   - ../../components/edge-termination
 #   - ../../components/enable-notifications
-#   - ../../components/gitops-admins
+  - ../../components/gitops-admins
 #   - ../../components/health-check-olm
 #   - ../../components/health-check-openshift-builds

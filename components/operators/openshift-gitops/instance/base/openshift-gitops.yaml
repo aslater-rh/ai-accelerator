@@ -3,7 +3,7 @@ kind: ArgoCD
 metadata:
   name: openshift-gitops
 spec:
-  resourceHealthChecks: []
+#   resourceHealthChecks: []
 #   server:
 #     autoscale:
 #       enabled: false
