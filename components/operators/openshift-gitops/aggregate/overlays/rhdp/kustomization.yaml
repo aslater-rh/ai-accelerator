@@ -4,3 +4,15 @@ kind: Kustomization
 resources:
   - ../../../instance/overlays/rhdp
   - ../../../operator/overlays/gitops-1.21
+
+patches:
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: ArgoCD
+      name: openshift-gitops
+      namespace: openshift-gitops
+    patch: |-
+      - op: add
+        path: /metadata/annotations/argocd.argoproj.io~1compare-options
+        value: IgnoreExtraneous
