@@ -2,8 +2,8 @@ apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
   name: openshift-gitops
-# spec:
-#   resourceHealthChecks: []
+spec:
+  resourceHealthChecks: []
 #   server:
 #     autoscale:
 #       enabled: false
@@ -70,11 +70,11 @@ metadata:
 #         enabled: false
 #       route:
 #         enabled: false
-#   rbac:
-#     policy: |
-#       g, system:cluster-admins, role:admin
-#       g, cluster-admins, role:admin
-#     scopes: '[groups]'
+  rbac:
+    policy: |
+      g, system:cluster-admins, role:admin
+      g, cluster-admins, role:admin
+    scopes: '[groups]'
 #   repo:
 #     resources:
 #       limits:
