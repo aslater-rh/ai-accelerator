@@ -2,10 +2,12 @@ apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
   name: openshift-gitops
+  annotations: 
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   rbac:
     policy: |-
+      g, system:cluster-admins, role:admin
       g, cluster-admins, role:admin
       g, admin, role:admin
-      g, system:cluster-admins, role:admin
     scopes: '[groups,email]'
