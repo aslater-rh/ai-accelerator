@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - ../../../instance/overlays/rhdp
-  - ../../../operator/overlays/latest
+  - ../../../operator/overlays/gitops-1.21
