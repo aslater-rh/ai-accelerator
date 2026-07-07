@@ -2,6 +2,8 @@ apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
   name: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-options: Skip=true
 spec:
 #   resourceHealthChecks: []
 #   server:
