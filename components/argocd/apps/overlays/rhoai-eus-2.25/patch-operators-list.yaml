@@ -21,11 +21,11 @@ spec:
         values:
           name: openshift-custom-metrics-autoscaler-operator
           path: components/operators/openshift-custom-metrics-autoscaler/operator/overlays/stable
-      - cluster: local
-        url: https://kubernetes.default.svc
-        values:
-          name: openshift-gitops-operator
-          path: components/operators/openshift-gitops/aggregate/overlays/rhdp
+      # - cluster: local
+      #   url: https://kubernetes.default.svc
+      #   values:
+      #     name: openshift-gitops-operator
+      #     path: components/operators/openshift-gitops/aggregate/overlays/rhdp
       - cluster: local
         url: https://kubernetes.default.svc
         values:
