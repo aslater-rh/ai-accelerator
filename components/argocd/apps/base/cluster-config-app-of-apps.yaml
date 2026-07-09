@@ -13,7 +13,7 @@ spec:
     repoURL: https://github.com/redhat-ai-services/ai-accelerator.git
     targetRevision: main
   syncPolicy:
-    automated:
+    manual:
       prune: false
       selfHeal: true
     syncOptions:
