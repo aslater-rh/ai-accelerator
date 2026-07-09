@@ -12,10 +12,4 @@ spec:
     path: patch-me-see-overlays
     repoURL: https://github.com/redhat-ai-services/ai-accelerator.git
     targetRevision: main
-  syncPolicy:
-    manual:
-      prune: false
-      selfHeal: true
-    syncOptions:
-      - ServerSideApply=true
-      - RespectIgnoreDifferences=true
+  syncPolicy: {}
