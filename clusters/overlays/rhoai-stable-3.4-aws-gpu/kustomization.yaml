@@ -26,7 +26,7 @@ configMapGenerator:
   - name: gitops-repo-config
     literals:
       - repoURL=https://github.com/aslater-rh/ai-accelerator.git
-      - targetRevision=main
+      - targetRevision=feat/lztvp-modifications
 
 replacements:
   # copy the repo from the application to the applicationsets

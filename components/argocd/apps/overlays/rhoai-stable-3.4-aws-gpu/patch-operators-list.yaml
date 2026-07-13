@@ -46,6 +46,7 @@ spec:
         values:
           name: openshift-custom-metrics-autoscaler-operator
           path: components/operators/openshift-custom-metrics-autoscaler/operator/overlays/stable
+      # Comment out to let LZTVP own the gitops operator
       # - cluster: local
       #   url: https://kubernetes.default.svc
       #   values:
