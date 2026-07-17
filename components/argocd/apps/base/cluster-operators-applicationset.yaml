@@ -20,9 +20,9 @@ spec:
       labels:
         gitops: operator
     spec:
-      preserveResourcesOnDeletion: true
       project: cluster-config
       syncPolicy:
+        preserveResourcesOnDeletion: true
         automated:
           prune: false
           selfHeal: true
